@@ -1,0 +1,50 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top" style="color: aliceblue; background-color: rgba(42, 34, 34, 0.70);">
+  <div class="container">
+    <a class="navbar-brand" href="#"> <img src="assets/qlogo.png" alt="" style="max-width: 6%;color: white; "><a style="color: white;">QUADRATECH</a></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto" >
+        <li class="nav-item" style="margin-right: 5%;">
+          <a class="nav-link " routerLink="../home-page" style="color: white; font-weight: 600;">Home</a>
+        </li>
+        <li class="nav-item" style="margin-right: 5%;">
+          <a class="nav-link " routerLink="../about-page" style="color: white;font-weight: 600;">About</a>
+        </li>
+        <li class="nav-item" style="margin-right: 5%;">
+          <a class="nav-link"  routerLink = "../cases" href="#" style="color: white;font-weight: 600;">Cases</a>
+        </li>
+        <li class="nav-item" style="margin-right: 5%;" >
+          <a class="nav-link" routerLink="../resources-page" style="color: white;font-weight: 600;">Resources</a>
+        </li>
+        <li class="nav-item dropdown" style="margin-right: 5%;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;font-weight: 600;">
+           How To
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/report-news">Report Fake News</a></li>
+            <li><a class="dropdown-item" routerLink="/fact-checking">Do Fact-checking</a></li>
+            <li><a class="dropdown-item" routerLink="/spot-news">Spot Fake News</a></li>
+            <li><a class="dropdown-item" routerLink="/handle-news">Handle Fake News and Misinformation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--<app-home-page></app-home-page>
+<app-about-page></app-about-page>
+<app-cases></app-cases>
+<app-resources-page></app-resources-page>
+<app-fact-checking></app-fact-checking>
+<app-handle-news></app-handle-news>
+<app-report-news></app-report-news>-->
+<router-outlet></router-outlet>
